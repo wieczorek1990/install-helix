@@ -17,8 +17,8 @@ echo "Installing: cargo check."
 hash cargo
 if [ $? -ne 0 ]
 then
-  echo "Installing Rust."
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  echo "No Rust found."
+  exit 1
 fi
 
 echo "Installing: cargo install."
